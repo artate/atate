@@ -14,9 +14,6 @@ yarn-error.log*
 .pnpm-debug.log*
 package-lock.json
 
-# Vite build output
-assets/build/
-
 # Environment variables
 .env
 .env.*
