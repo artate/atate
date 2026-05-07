@@ -1,3 +1,8 @@
+<?php
+$manifest = json_decode(file_get_contents(__DIR__ . '/../assets/build/.vite/manifest.json'), true);
+$css = '/assets/build/' . $manifest['assets/src/scss/main.scss']['file'];
+$js  = '/assets/build/' . $manifest['assets/src/js/app.js']['file'];
+?>
 <html lang="en">
 
 <head>
@@ -26,10 +31,10 @@
     <meta name="twitter:image" content="https://images.pexels.com/photos/15521606/pexels-photo-15521606/free-photo-of-street-in-london.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
 
 
-    <link rel="stylesheet" href="/assets/build/css/main.min.css">
+    <link rel="stylesheet" href="<?= $css ?>">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/assets/build/js/app.js"></script>
+    <script src="<?= $js ?>"></script>
     <script src="https://kit.fontawesome.com/6a2caebd09.js" crossorigin="anonymous"></script>
 
 </head>

@@ -68,7 +68,7 @@
                         <div class="project">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img src="/assets/img/niaxo.png" alt="Niaxo">
+                                    <img src="/assets/img/niaxo.png" alt="Niaxo" loading="lazy">
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="title">
@@ -86,7 +86,7 @@
                         <div class="project">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img src="/assets/img/bathstore-portfolio.png" alt="Bathstore">
+                                    <img src="/assets/img/bathstore-portfolio.png" alt="Bathstore" loading="lazy">
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="title">
@@ -105,7 +105,7 @@
                         <div class="project">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img src="/assets/img/wickes.png" alt="Wickes">
+                                    <img src="/assets/img/wickes.png" alt="Wickes" loading="lazy">
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="title">
@@ -123,7 +123,7 @@
                         <div class="project">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <img src="/assets/img/tate-roofing.png" alt="Tate Roofing">
+                                    <img src="/assets/img/tate-roofing.png" alt="Tate Roofing" loading="lazy">
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="title">

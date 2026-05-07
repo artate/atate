@@ -25,15 +25,16 @@ export default defineConfig(({ mode }) => ({
         cssMinify: true,
         sourcemap: mode !== 'production',
         watch: mode === 'development' ? {} : null,
+        manifest: true,
         rollupOptions: {
             input: {
                 app: 'assets/src/js/app.js',
                 main: 'assets/src/scss/main.scss',
             },
             output: {
-                entryFileNames: 'js/[name].js',
+                entryFileNames: 'js/[name].[hash].js',
                 assetFileNames: ({ name }) => {
-                    if (/\.(css)$/.test(name ?? '')) return 'css/[name].min.[ext]';
+                    if (/\.(css)$/.test(name ?? '')) return 'css/[name].[hash].min.[ext]';
                     if (/\.(png|jpe?g|gif|svg)$/.test(name ?? '')) return 'img/[name].[ext]';
                     return '[name].[ext]';
                 }
