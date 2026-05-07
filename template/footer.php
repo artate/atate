@@ -9,6 +9,9 @@
                         <a href="https://www.linkedin.com/in/andrew-tate5794/" target="_blank" rel="noopener noreferrer" class="footer-social">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
+                        <a href="https://github.com/artate" target="_blank" rel="noopener noreferrer" class="footer-social">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </div>
