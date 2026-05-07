@@ -1,0 +1,12 @@
+html, body, div, h1, h2, h3, h4, h5, a, p, li  {
+  font-family: $base-font-family !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Partials
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/main-nav';
+
+// Components
+@import 'components/components';
+@import 'components/banner';
+@import 'components/about';
+@import 'components/work-history';
+@import 'components/portfolio';
+@import 'components/scroll-animations';
+@import 'components/portfolio-page';
+@import 'components/contact';

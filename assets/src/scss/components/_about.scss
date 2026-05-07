@@ -1,0 +1,29 @@
+.about-me {
+    padding: 0 0 60px;
+    
+    .glance {
+        border: 1px solid #eee;
+        padding: 20px
+    }
+
+    @media(max-width: 991.98px) {
+        .glance {
+            margin-bottom: 30px
+        }
+    }
+
+    .glance strong {
+        font-size: 18px
+    }
+
+    .glance .fa {
+        font-size: 20px;
+        margin-right: 4px;
+        color: #3e3e3e
+    }
+
+    .glance .fa.fa-map-marker {
+        font-size: 25px;
+        font-weight: 700
+    }
+}

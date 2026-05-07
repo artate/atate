@@ -1,0 +1,15 @@
+footer {
+    background-color: #404E5C;
+    color: #FFFFFF;
+    padding: 15px 0;
+
+    .footer-social {
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #0a66c2;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+$animation-timing-function: cubic-bezier(.4,0,.2,1);
+$animation-duration: 1s;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  } 
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1; 
+    transform: none;
+  } 
+}
+
+@keyframes zoomReverseIn {
+    0% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 1; 
+      transform: none;
+    } 
+}
+
+@keyframes slideInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(50%); 
+  }
+  100% {
+    opacity: 1;
+    transform: none; 
+  } 
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%); 
+  }
+  100% {
+    opacity: 1;
+    transform: none; 
+  } 
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+// Animations
+// ----------
+[data-animation] {
+  opacity: 0;
+  animation-timing-function: $animation-timing-function;
+  animation-fill-mode: both;
+  animation-duration: $animation-duration;
+}
+
+.animations-disabled {
+  &, [data-animation] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+.fadeOut {
+  animation-name: fadeIn;
+  animation-direction: reverse;
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+.zoomOut {
+  animation-name: zoomIn;
+  animation-direction: reverse;
+}
+
+.zoomReverseIn {
+    animation-name: zoomReverseIn;
+}
+
+.zoomReverseOut {
+  animation-name: zoomReverseIn;
+  animation-direction: reverse;
+}
+
+.slideInLeft {
+  animation-name: slideInleft;
+}
+.slideInRight {
+  animation-name: slideInRight;
+}
